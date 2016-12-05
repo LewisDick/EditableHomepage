@@ -1,0 +1,295 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+
+    background: rgb(220, 220, 220) no-repeat fixed center center;
+    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+}
+#background-image {
+    content: "";
+    position:fixed;
+    top:-30px;
+    left:-30px;
+    //**right:10;**//
+    z-index: -9999;
+    display:block;
+    background: black no-repeat fixed center center;
+    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    width:110vw;
+    height: 110vh;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+#contents {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+#main {
+    margin:0 auto;
+    width:611px;
+    height:300px;
+    z-index:801;
+    background-color:rgba(255,255,255,1);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 0 12px -1px rgba(0,0,0,0.8);
+}
+.button{
+    z-index: 1000;
+    width:5vw;
+    height:5vh;
+    background-color:mediumspringgreen;
+    line-height: 5vh;
+    vertical-align: middle;
+    text-align:center;
+    cursor: pointer;
+    float:right;
+}
+#cookieWarning {
+    font-family:Montserrat, sans-serif;
+    background-color:white;
+    width:100vw;
+    height:5vh;
+    top:0;
+    position: fixed;
+    z-index: 999 !important;
+    transition: top 1s;
+    box-shadow: 0 0 12px -1px rgba(0,0,0,0.8);
+}
+#cookieWarning span {
+    margin-left:1vw;
+    float:left;
+    line-height: 5vh;
+    vertical-align: middle;
+}
+#cookieWarning span a {
+    color:dodgerblue;
+    text-decoration: underline dotted dodgerblue;
+}
+#edit-option {
+    background-color: white;
+    width: auto;
+    height:auto;
+    font-family:Lato, sans-serif;
+    position: absolute;
+    padding-left:4px;
+    padding-right: 4px;
+    bottom:0;
+    left:10px;
+    cursor: pointer;
+    z-index: 900;
+    background-color:rgba(255,255,255,0.4);
+    box-shadow: 0 0 12px -1px rgba(0,0,0,0.8);
+    transition: all ease-in 0.3s;
+}
+#edit-box {
+    top:0;
+    width:500px;
+    height:100%;
+    z-index:899;
+    background-color:white;
+    position: absolute;
+    left: -500px;
+    background-color:rgba(255,255,255,1);
+    box-shadow: 0 0 12px -1px rgba(0,0,0,0.8);
+    transition: all ease-in 0.3s;
+}
+#options-header {
+    margin-top: 0;
+    width:100%;
+    height: 50px;
+    background-color: rgb(240,240,240);
+    line-height: 50px;
+    
+}
+#options-header h2 {
+    padding: 0 0 0 0;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom:0;
+    
+}
+#exit {
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-left: 450px;
+    top:0;
+    background-color:rgb(250,82,82); 
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+#exit:hover {
+    background-color:rgb(230,62,62); 
+}
+#darken {
+    top:0;
+    opacity: 0;
+    background-color: rgb(0,0,0);
+    height: 100%;
+    width:100%;
+    z-index: 800;
+    position: absolute;
+    transition: all linear 0.1s;
+}
+#edit-column {
+    margin-top: 10px; 
+    float:left;
+    width:250px;
+    position: relative;
+    z-index: 10000001;
+    display:inline-block;
+}
+#edit-column input {
+
+    
+}
+
+.webname {
+    border: none;
+    background-color: rgba(240,240,240,1);
+    outline: none;
+    padding: 2px;
+    width: 200px;
+    margin: 3px 2px 2px 25px;
+}
+#bg {
+    margin-top: 10px;
+    width:450px;
+    margin-left:25px;
+}
+.radio {
+    font-family: Lato, sans-serif;
+    margin-left:25px;
+    float:left;
+    display:block;
+}
+#save {
+    font-family: Lato,sans-serif;
+    background-color: #89D695;
+    width:250px;
+    height:60px;
+    margin-top: 16px;
+    margin-left: 125px;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+    color:white;
+    padding: 2px; 
+    font-size: 30px;
+    border-radius: 3px;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+#save:hover {
+    box-shadow: 0 0 12px -1px rgba(0,0,0,0.6);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+.link {
+    text-decoration: none;
+    list-style: none;
+    font-family:Lato, sans-serif;
+    padding-top:6px;
+    padding-left:10px;
+    padding-right:10px;
+    z-index:0;
+    position:static;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+
+}
+.links {
+    float:left;
+}
+#searchForm{
+    width:100%;
+}
+.clear {
+    width:55px;
+    float:left;
+    height:40px;
+}
+#searchForm input {
+    margin-top: 0.5%;
+    outline:none;
+    width:68.5%;
+    margin-left:0.5%;
+    border-radius: 2px 2px 0 0;
+    background-color:rgba(0,0,0,0.0);
+    transition: background-color 0.3s linear;
+    border:none;
+}
+#searchInput:focus {
+    transition: background-color 0.3s linear;
+    background-color:rgba(0,0,0,0.1);
+}
+.image {
+    background-color: black;
+    background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+	background-color:rgba(50,50,50,1);
+    height:97.5%;
+    border-radius: 2px;
+    width:30%;
+    margin-left:0.5%;
+    margin-top:-2.45%;
+    float:right;
+    z-index: 99999;
+    margin-right: 0.5%;
+}
+img {
+    height:100%;
+    /**margin-left: -50px;**/
+}
+
+h2,h3 {
+    font-family: 'Lato', sans-serif;
+    margin-left:25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type="range"]{
+    width:90%;
+}
+

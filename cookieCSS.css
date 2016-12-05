@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+
+    background: rgb(218, 212, 220) no-repeat fixed center center;
+    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+}
+#background-image {
+    background-image:url("http://previews.123rf.com/images/ericlefrancais/ericlefrancais1008/ericlefrancais100800007/7549999-Chocolate-chips-cookies-wallpaper-background-Stock-Photo.jpg");
+    content: "";
+    position:fixed;
+    top:-30px;
+    left:-30px;
+    right:10;
+    z-index: -9999;
+    display:block;
+    /**background: black no-repeat fixed center center;**/
+    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    width:110vw;
+    height: 110vh;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+#contents {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+#main {
+    overflow:;
+    height:80vh;
+    width:35vw;
+    padding: 1em;
+    margin:0 auto;
+    overflow-wrap: normal;
+    z-index:801;
+    background-color:rgba(255,255,255,1);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 0 12px -1px rgba(0,0,0,0.8);
+}
+.button{
+    z-index: 1000;
+    width:5vw;
+    height:5vh;
+    background-color:mediumspringgreen;
+    line-height: 5vh;
+    vertical-align: middle;
+    text-align:center;
+    cursor: pointer;
+    display:inline-block;
+    position:absolute;
+    bottom:1em;
+    color:black;
+}
+.webname {
+    border: none;
+    background-color: rgba(240,240,240,1);
+    outline: none;
+    padding: 2px;
+    width: 200px;
+    margin: 3px 2px 2px 25px;
+}
+#bg {
+    margin-top: 10px;
+    width:450px;
+    margin-left:25px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.link {
+    text-decoration: none;
+    list-style: none;
+    font-family:Lato, sans-serif;
+    padding-top:6px;
+    padding-left:10px;
+    padding-right:10px;
+    z-index:0;
+    position:static;
+}
+a {
+    text-decoration: none;
+    color: #4f84ff;
+    font-family:Lato;
+}
+.clear {
+    width:55px;
+    float:left;
+    height:40px;
+}
+p {
+    margin-bottom:10px;
+}
+#linkList{
+    list-style-type:none;
+    margin-left: 1em;
+    margin-bottom:10px;
+}
+#linkedList li a {
+
+}
+h1 {
+    font-family:Montserrat, sans-serif;
+    text-align:center;
+    margin-bottom: 30px;
+
+}
+.cookieInfo {
+    font-family: Lato, sans-serif;
+}
